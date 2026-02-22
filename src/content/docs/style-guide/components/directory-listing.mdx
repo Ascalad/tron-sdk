@@ -1,0 +1,21 @@
+---
+title: Directory listing
+styleGuide:
+  component: DirectoryListing
+---
+
+import { Render } from "~/components";
+
+<Render file="directory-listing-definition" />
+
+We also have an optional `descriptions` parameter which - if present - adds in the text from the [front matter `description`](/style-guide/frontmatter/) field.
+
+```mdx live
+import { DirectoryListing } from "~/components";
+
+<DirectoryListing folder="workers/wrangler" descriptions />
+```
+
+## Associated content types
+
+- [Navigation](/style-guide/documentation-content-strategy/content-types/navigation/)

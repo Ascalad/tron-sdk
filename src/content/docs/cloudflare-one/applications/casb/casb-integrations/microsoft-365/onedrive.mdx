@@ -1,0 +1,42 @@
+---
+pcx_content_type: reference
+title: OneDrive
+rss: file
+sidebar:
+  order: 2
+---
+
+import { Render } from "~/components";
+
+<Render
+  file="casb/integration-description"
+  params={{ integrationName: "OneDrive", integrationAccountType: "Microsoft 365 account" }}
+/>
+
+## Integration prerequisites
+
+<Render file="casb/microsoft/m365-prereqs" />
+
+## Integration permissions
+
+<Render
+  file="casb/integration-perms"
+  params={{ parentIntegration: "Microsoft 365", parentSlug: "microsoft-365" }}
+/>
+
+## Security findings
+
+<Render
+  file="casb/security-findings"
+  params={{ integrationName: "OneDrive", slugRelativePath: "microsoft-365/onedrive" }}
+/>
+
+### File sharing
+
+<Render file="casb/microsoft/file-sharing" />
+
+### Data Loss Prevention (optional)
+
+<Render file="casb/data-loss-prevention" />
+
+<Render file="casb/microsoft/m365-dlp-findings" />
