@@ -1,8 +1,9 @@
-tab
+
 on:
   workflow_dispatch: {}
   schedule:
     - cron: "0 4 * * *"
+    tab
 name: Semgrep config
 jobs:
   semgrep:
